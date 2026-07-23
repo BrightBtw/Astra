@@ -3,6 +3,7 @@ import path from "path";
 import injectHTML from "vite-plugin-html-inject";
 
 export default defineConfig({
+  base: "https://github.com/BrightBtw/Astra",
   plugins: [injectHTML()],
   resolve: {
     alias: {
