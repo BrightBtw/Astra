@@ -38,7 +38,7 @@ inputEl.oninput = () => {
 };
 buttonEl.onclick = () => {
   if (inputEl.value.replace(/\D/g, "").length != 8) {
-    inputEl.style.border = "3px solid #9b4040";
+    inputEl.style.border = "4px solid #9b4040";
   } else {
     inputEl.style.border = "";
     let itemArr = document.querySelectorAll(".square__item");

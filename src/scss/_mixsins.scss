@@ -1,0 +1,6 @@
+@mixin respond($media) {
+  $size: map-get($breakpoints, $media);
+  @media screen and (min-width: #{$size + 1px}) {
+    @content;
+  }
+}

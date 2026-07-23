@@ -1,6 +1,14 @@
 .footer {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+
+  @include respond("tablet") {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: none;
+  }
 
   &__law {
     display: flex;
